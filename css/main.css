@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background: white;
+    width: 100dvw;
+    height: 100dvh;
+    margin: 0;
+    padding: 0;
+}
+
+.background-degrade {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    margin-left: 50%;
+    padding: 0;
+    background: url(../assets/images/BackgroundDegrade.png);
+}
+
+.login-form {
+    background: var(--semantics-three);
+    width: 50%;
+    height: 70%;
+    border-radius: 10px;
+}

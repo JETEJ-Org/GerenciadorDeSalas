@@ -1,0 +1,27 @@
+:root {
+
+    /* Fontes */
+    --font: "Noto Sans", sans-serif;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-bold: 600;
+
+    /* Cores primarias */
+    --primary-one: #13678A;
+    --primary-two: #545454;
+    --primary-three: #C3161C;
+    --primary-four: #005495;
+
+    /* Cores Secundarias */
+    --secondary-one: #123033;
+    --secondary-two: #3A3A3A;
+    --secondary-three: #C3C3C3;
+    --secondary-four: #D3D3D3;
+
+    /* Cores Semanticas */
+    --semantics-one: #123033;
+    --semantics-two: #8FC2C7;
+    --semantics-three: #DAEAEB;
+
+
+}
