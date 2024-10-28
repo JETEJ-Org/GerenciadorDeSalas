@@ -1,111 +1,223 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-    background: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100dvw;
-    height: 100dvh;
+    position: relative;
     margin: 0;
     padding: 0;
+    width: 100dvw;
+    height: 100dvh;
+    background-image: var(--green-degrade);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--semantics-four);
     font-family: var(--font);
     font-weight: var(--font-regular);
 }
 
-h1 {
-    font-size: 30px;
-    color: var(--secondary-one);
-}
-
 a {
     text-decoration: none;
-    color: black;
+    color: var(--semantics-four);
+    margin: 0;
+    padding: 0;
 }
 
-button {
-    width: 80%;
-    height: 40px;
-    background: var(--semantics-two);
-    color: black;
-    border: solid 1px var(--semantics-one);
-    border-radius: 25px;
-    cursor: pointer;
+p {
+    color: var(--semantics-four);
+    font-weight: var(--font-regular);
+    margin: 0;
+    padding: 0;
+}
+
+#login-alert {
+    color: red;
 }
 
 .hidden {
     display: none;
+    visibility: hidden;
 }
 
-.background-degrade {
+.main-container {
+    position: absolute;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    position: relative;
+    margin: 20px 0 0 0;
+}
+
+.logo {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    background-size: cover;
+}
+
+.theme-change {
+    display: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.name {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 36px;
+    color: var(--text);
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 36px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    max-width: 300px;
+    height: 43px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    border: none;
+    background: var(--primary-one);
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.back-btn {
+    min-width: 40px;
+    min-height: 40px;
+    max-width: 40px;
+    max-height: 40px;
+    margin-right: 75%;
+    margin-bottom: 20px;
+}
+
+.frame-main {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--semantics-three);
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-radius: 30px;
+    box-shadow: 0 0 19.9px 0 rgba(0, 0, 0, 0.6);
+}
+
+.frame-secondary {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.secondary-illustration {
+    position: absolute;
+    display: none;
     align-items: center;
     justify-content: center;
     width: 50%;
     height: 100%;
-    margin: 0;
-    margin-left: 50%;
-    padding: 0;
-    background: url(../assets/images/BackgroundDegrade.png);
+    overflow: hidden;
+    background-color: var(--green-background);
 }
 
-.login-frame {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 50%;
-    height: 60%;
-    border-radius: 10px;
-    background: var(--semantics-three);
-}
-
-.login-frame img {
+.secondary-illustration img {
     width: 100%;
-    height: 30%;
+    height: auto;
 }
 
-.login-form {
+.loginPage {
+    position: absolute;
     display: flex;
+    align-items: center;
+    justify-content: flex-start;
     flex-direction: column;
+    padding-top: 30px;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.loginForm {
+    display: flex;
     align-items: center;
     justify-content: center;
-    width: 85%;
-    height: 70%;
-    gap: 10px;
-    font-size: 14px;
-    color: var(--secondary-three);
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: auto;
 }
 
-.login-form a {
-    color: #127F87;
+.loginForm input {
+    width: 80%;
+    height: 40px;
+    padding: 0 10px;
+    color: var(--letras);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    border: none;
+    border-bottom: solid 1px var(--primary-two);
+    background: none;
+
+}
+
+.loginForm button {
+    width: 80%;
+}
+
+.loginForm a {
     font-weight: var(--font-bold);
 }
 
-.login-form p {
-    color: #127F87;
-    font-weight: var(--font-regular);
-}
-
-.login-form input {
-    width: 100%;
-    height: 12%;
-    border: none;
-    border-bottom: solid 1px var(--secondary-three);
-    background: none;
-}
-
-.login-form fieldset {
+.loginForm fieldset {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    text-wrap: nowrap;
+    width: 80%;
+    height: 25px;
     padding: 0;
+    padding-left: 20px;
+    padding-right: 20px;
     border: none;
 }
 
-.login-form fieldset input {
+.loginForm fieldset input {
     width: auto;
 }
 
@@ -115,11 +227,8 @@ button {
     padding-left: 28px;
     cursor: pointer;
     font-size: 14px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
-    color: var(--secondary-two);
+    color: var(--letras);
 }
 
 .checkbox-container input {
@@ -136,7 +245,7 @@ button {
     height: 18px;
     width: 18px;
     border-radius: 4px;
-    border: solid 2px var(--semantics-one);
+    border: solid 2px var(--semantics-four);
 }
 
 .checkbox-container:hover input~.checkmark {
@@ -169,29 +278,79 @@ button {
     transform: rotate(45deg);
 }
 
-.slide-container {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 50%;
-    height: 60%;
-    left: 0;
-    margin: 0;
-    padding: 0;
-    gap: 20px;
-    overflow: hidden;
+/* Laptops e desktops */
+@media (min-width: 1024px) {
+    .title {
+        margin-right: 80%;
+    }
+
+    .theme-change {
+        display: flex;
+    }
+
+    .button-register {
+        margin-bottom: 60px;
+    }
+
+    .frame-main {
+        overflow-y: hidden;
+    }
+
+    .frame-secondary {
+        width: 50%;
+        margin-left: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-y: hidden;
+    }
+
+    .secondary-illustration {
+        display: flex;
+    }
+
+    .loginPage {
+        justify-content: center;
+        padding: 0;
+    }
+
+    .loginForm input {
+        width: 70%;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .loginForm button {
+        width: 60%;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .loginForm p {
+        font-size: 14px;
+    }
+
+    .loginForm fieldset {
+        width: 70%;
+    }
+
 }
 
-.slide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@media (max-height: 200px) {
+    .title {
+        display: none;
+    }
 }
 
-.slide img {
-    position: relative;
-    width: 100%;
-    height: 100%;
+@media (max-height: 450px) {
+    .main-illustration {
+        display: none;
+    }
+
+    .button-register {
+        margin-bottom: 0;
+    }
+
 }
+
+@media (max-height: 600px) {}
