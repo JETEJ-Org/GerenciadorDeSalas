@@ -8,7 +8,7 @@
     padding: 0;
 }
 
-body {
+.bodyLogin {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,7 +31,9 @@ a {
     color: var(--semantics-four);
     margin: 0;
     padding: 0;
+    margin-right: 10px;
 }
+
 
 p {
     color: var(--semantics-four);
