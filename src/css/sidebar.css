@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Urbanist:wght@400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  left: 0;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px;
+  height: 95vh;
+  background-color: var(--semantics-three);
+  padding: 20px;
+  margin-left: 10px;
+  border-radius: 13.638px;
+  filter: drop-shadow(5px 5px 10px rgba(3, 79, 117, 0.2));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 15.042px;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--secondary-one);
+  transition: transform 0.3s ease; /* Para a animação do toggle */
+}
+
+.sidebar.closed {
+  transform: translate(-100%, -50%); /* Move a sidebar para fora da tela ao fechar */
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  margin-top: 40px;
+  margin-left: 30px;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.menu li {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  transition: transform 0.3s ease;
+  border-radius: 21.489px;
+  color: var(--secondary-one);
+  font-size: 18px;
+}
+
+.menu li:hover,
+.logout li:hover {
+  background-color: var(--semantics-two);
+  transform: scale(1.05);
+}
+
+.menu a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  width: 100%; 
+}
+
+.logout {
+  padding-top: 20px;
+  border-top: 2px solid var(--secondary-one);
+}
+
+.logout ul {
+  list-style: none;
+  padding: 0;
+}
+
+.logout li {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 21.489px;
+  font-family: "Urbanist", sans-serif;
+  font-size: 15.042px;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--secondary-one);
+}
+
+.logout a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.toggle-btn {
+  position: absolute;
+  left: 320px; /* Distância da sidebar */
+  top: 50%; /* Centralizado verticalmente */
+  transform: translateY(-50%); /* Ajuste para centralização */
+  background: var(--semantics-three); /* Cor de fundo igual à sidebar */
+  border: none;
+  color: var(--secondary-one);
+  font-size: 10px;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+}
+
+.sidebar.closed + .toggle-btn {
+  left: 20px; /* Ajusta a posição quando a sidebar está fechada */
+}
+
+.toggle-btn:hover {
+  background: var(--semantics-two); /* Cor de fundo ao passar o mouse */
+}

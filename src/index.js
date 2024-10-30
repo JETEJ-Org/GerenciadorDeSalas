@@ -7,6 +7,7 @@ import reportWebVitals from "./reportWebVitals";
 import Home from "./routes/Home";
 import Building from "./routes/Building";
 import Login from "./routes/Login";
+import Sidebar from "./components/sidebar";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/building",
-    element: <Building />,
+    element: <Sidebar />,
   },
 ]);
 
