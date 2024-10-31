@@ -13,17 +13,21 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
-    path: "/login",
-    element: <Login />,
-  },
-  {
     path: "/",
     element: <Home />,
   },
   {
-    path: "/building",
+    path: "/login",
+    element: <Login />,
+  },
+  {
+    path: "/sidebar",
     element: <Sidebar />,
   },
+  {
+    path: "/building",
+    element: <Building />,
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

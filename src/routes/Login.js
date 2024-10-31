@@ -55,7 +55,7 @@ const Login = () => {
     <div className="bodyLogin">
       <div className="main-container">
         <div className="title">
-          <img className="logo" src={logoWhiteIcon} alt="ROOM LOGO" />
+          <img className="logo-login" src={logoWhiteIcon} alt="ROOM LOGO" />
           <img
             id="theme-change"
             className="theme-change"
