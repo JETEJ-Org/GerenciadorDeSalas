@@ -44,7 +44,7 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image: url(../assets/images/BackgroundDegrade.png);
+    background-image: url(../../assets/login/background.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -59,7 +59,7 @@
     left: 0;
     width: 100%;
     height: 100px;
-    background: url(../assets/images/wave.png);
+    background: url(../../assets/building/wave.png);
     background-size: 1000px 100px;
 }
 

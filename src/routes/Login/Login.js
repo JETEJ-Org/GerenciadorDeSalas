@@ -1,19 +1,26 @@
 import React, { useState } from "react";
-import "../css/main.css";
-import "../css/variables.css";
-import logoWhiteIcon from "../assets/svg/logo-white.svg";
-import lightIcon from "../assets/svg/lamp-light-on.svg";
-import darkIcon from "../assets/svg/lamp-light-off.svg";
-import illustrationLight from "../assets/svg/welcome-slideshow/slide2-white.svg";
-import illustrationDark from "../assets/svg/welcome-slideshow/slide2-black.svg";
+
+// Assets
+import logoWhiteIcon from "../../assets/login/logo-white.svg";
+import lightIcon from "../../assets/login/lamp-light-on.svg";
+import darkIcon from "../../assets/login/lamp-light-off.svg";
+import illustrationLight from "../../assets/welcome-slideshow/slide2-white.svg";
+import illustrationDark from "../../assets/welcome-slideshow/slide2-black.svg";
+
+// Styles
+import "./login.css";
+import "../../global.css";
 
 const Login = () => {
+
+  // States
   const [userName, setUserName] = useState("");
   const [loginAlert, setLoginAlert] = useState("");
   const [theme, setTheme] = useState(true);
   const [illustration, setIllustration] = useState(illustrationLight);
   const [themeIcon, setThemeIcon] = useState(lightIcon);
 
+  // Verificar se o campo de login está vazio
   const handleLogin = () => {
     if (userName === "") {
       setLoginAlert("Por favor insira o seu login!");
@@ -21,6 +28,7 @@ const Login = () => {
     }
   };
 
+  // Função para mudar o tema
   const toggleTheme = () => {
     if (theme) {
       document.documentElement.style.setProperty(
@@ -51,6 +59,7 @@ const Login = () => {
     }
   };
 
+  // Render
   return (
     <div className="bodyLogin">
       <div className="main-container">

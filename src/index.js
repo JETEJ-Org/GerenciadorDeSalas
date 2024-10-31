@@ -1,16 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./css/index.css";
 import reportWebVitals from "./reportWebVitals";
 
-// Configurando router
-import Home from "./routes/Home";
-import Building from "./routes/Building";
-import Login from "./routes/Login";
-import Sidebar from "./components/sidebar";
-
+// Routes
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from "./routes/Home/Home";
+import Login from "./routes/Login/Login";
+import Building from "./routes/Building/Building";
 
+// Components
+import Sidebar from "./components/sidebar/sidebar";
+
+// Config Routes
 const router = createBrowserRouter([
   {
     path: "/",
@@ -30,6 +31,7 @@ const router = createBrowserRouter([
   }
 ]);
 
+// Render
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>

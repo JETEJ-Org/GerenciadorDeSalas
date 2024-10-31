@@ -1,7 +1,12 @@
 import React from "react";
-import "../css/building.css";
-import maintenance from "../assets/svg/undraw_maintenance.svg";
 
+// Assets
+import maintenance from "../../assets/building/undraw_maintenance.svg";
+
+// Styles
+import "./building.css";
+
+// Render
 const Building = () => {
   return (
     <div className="building-body">

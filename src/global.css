@@ -1,9 +1,10 @@
-:root {
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
     /* Background */
     --white-background: #FFFFFF;
     --green-background: #127F87;
-    --green-degrade: url(../assets/images/BackgroundDegrade.png);
+    --green-degrade: url(./assets/login/background.png);
 
     /* Fontes */
     --font: "Noto Sans", sans-serif;
@@ -32,4 +33,12 @@
     /* Outras cores */
     --letras: #000000;
 
+}
+
+#root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
