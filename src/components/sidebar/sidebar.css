@@ -27,12 +27,10 @@
   font-weight: 400;
   color: var(--secondary-one);
   transition: transform 0.3s ease;
-  /* Para a animação do toggle */
 }
 
 .sidebar.closed {
   transform: translate(-100%, -50%);
-  /* Move a sidebar para fora da tela ao fechar */
 }
 
 .logo {
@@ -41,7 +39,6 @@
   align-items: center;
   justify-content: center;
   margin-top: 40px;
-  margin-left: 30px;
 }
 
 .icon {
@@ -113,13 +110,9 @@
 .toggle-btn {
   position: absolute;
   left: 320px;
-  /* Distância da sidebar */
   top: 50%;
-  /* Centralizado verticalmente */
   transform: translateY(-50%);
-  /* Ajuste para centralização */
   background: var(--semantics-three);
-  /* Cor de fundo igual à sidebar */
   border: none;
   color: var(--secondary-one);
   font-size: 10px;
@@ -132,10 +125,8 @@
 
 .sidebar.closed+.toggle-btn {
   left: 20px;
-  /* Ajusta a posição quando a sidebar está fechada */
 }
 
 .toggle-btn:hover {
   background: var(--semantics-two);
-  /* Cor de fundo ao passar o mouse */
 }
