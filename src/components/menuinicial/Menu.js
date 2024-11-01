@@ -7,6 +7,7 @@ const Menu = () => {
       <Link className="linkNav" to="/login">Login</Link>
       <Link className="linkNav" to="/sidebar">Sidebar</Link>
       <Link className="linkNav" to="/building">Building</Link>
+      <Link className="linkNav" to="/start">Start</Link>
       <Link className="linkNav" to="/cadastro">Cadastro</Link>
     </div>
   );

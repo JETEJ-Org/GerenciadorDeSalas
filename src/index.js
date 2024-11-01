@@ -4,6 +4,7 @@ import reportWebVitals from "./reportWebVitals";
 
 // Routes
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Start from "./routes/Start/start"
 import Home from "./routes/Home/Home";
 import Login from "./routes/Login/Login";
 import Building from "./routes/Building/Building";
@@ -16,6 +17,7 @@ import DefinirNovaSenha from "./components/loginpage/definirNovaSenha";
 
 // Components
 import Sidebar from "./components/sidebar/sidebar";
+import Header from "./components/header/header";
 
 // Config Routes
 const router = createBrowserRouter([
@@ -58,6 +60,10 @@ const router = createBrowserRouter([
   {
     path: "/building",
     element: <Building />,
+  },
+  {
+    path: "/start",
+    element: <Start />,
   }
 ]);
 
