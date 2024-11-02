@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Outlet } from 'react-router-dom';
 
 // Assets
 import logoWhiteIcon from "../../assets/login/logo-white.svg";
@@ -11,22 +12,15 @@ import illustrationDark from "../../assets/welcome-slideshow/slide2-black.svg";
 import "./login.css";
 import "../../global.css";
 
+// Components
+
+
 const Login = () => {
 
   // States
-  const [userName, setUserName] = useState("");
-  const [loginAlert, setLoginAlert] = useState("");
   const [theme, setTheme] = useState(true);
   const [illustration, setIllustration] = useState(illustrationLight);
   const [themeIcon, setThemeIcon] = useState(lightIcon);
-
-  // Verificar se o campo de login está vazio
-  const handleLogin = () => {
-    if (userName === "") {
-      setLoginAlert("Por favor insira o seu login!");
-    } else {
-    }
-  };
 
   // Função para mudar o tema
   const toggleTheme = () => {
@@ -61,56 +55,26 @@ const Login = () => {
 
   // Render
   return (
-    <div className="bodyLogin">
-      <div className="main-container">
-        <div className="title">
+    <div className="body-login">
+      <div className="main-login-container">
+        <div className="title-login">
           <img className="logo-login" src={logoWhiteIcon} alt="ROOM LOGO" />
           <img
             id="theme-change"
-            className="theme-change"
+            className="theme-change-login"
             src={themeIcon}
             alt="mudar tema"
             onClick={toggleTheme}
           />
         </div>
 
-        <div className="frame-main">
-          <div className="secondary-illustration">
+        <div className="frame-main-login">
+          <div className="illustration-login">
             <img id="illustration" src={illustration} alt="Ilustração" />
           </div>
-
-          <div className="frame-secondary">
+          <div className="frame-secondary-login">
             <div className="loginPage">
-              <h2>Login</h2>
-              <div className="loginForm">
-                <p>{loginAlert}</p>
-                <input
-                  id="login-input"
-                  type="text"
-                  placeholder="Usuário"
-                  required
-                  value={userName}
-                  onChange={(e) => setUserName(e.target.value)}
-                />
-                <input type="password" placeholder="Senha" />
-                <fieldset>
-                  <label className="checkbox-container">
-                    Lembrar-Me
-                    <input type="checkbox" />
-                    <span className="checkmark"></span>
-                  </label>
-
-                  <a href="#">
-                    <p>Esqueceu a senha?</p>
-                  </a>
-                </fieldset>
-                <button id="login-btn" className="button" onClick={handleLogin}>
-                  Entrar
-                </button>
-                <p>
-                  Não tem uma conta? <a href="#">CADASTRE-SE</a>
-                </p>
-              </div>
+              <Outlet />
             </div>
           </div>
         </div>

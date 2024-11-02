@@ -22,8 +22,8 @@
 
 .group_search {
   display: flex;
-  align-items: center; 
-  justify-content: flex-start; 
+  align-items: center;
+  justify-content: flex-start;
   background: var(--Gray-50, #F2F2F2);
   padding: 8px;
   border-radius: 24px;
