@@ -1,12 +1,15 @@
 import React, { useRef, useEffect } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMagnifyingGlass, faXmark, faBell, faGear, faEllipsisVertical } from '@fortawesome/free-solid-svg-icons';
 
 //Styles
 import './header.css';
 
 //Assets
 import Sue from "../../assets/header_images/Sue.png"
+import Search from "../../assets/header_images/search.png"
+import Notification from "../../assets/header_images/Notifications (1).png"
+import Gear from "../../assets/header_images/faCog.png"
+import More from "../../assets/header_images/Keyboard arrow down.png"
+import Close from "../../assets/header_images/xmark-solid.svg"
 
 const Header = () => {
   
@@ -33,43 +36,37 @@ const Header = () => {
 
   return (
     <>
-      <nav className="container_search">
-          <div className="group_search">
-            <div className="icon_search">
-              <FontAwesomeIcon icon={faMagnifyingGlass} />
-            </div>
-            <input
-              type="text"
-              placeholder="Buscar"
-              className="input_search"
-              ref={inputSearchRef} 
-            />
-            <div className="btn_close" ref={btnCloseRef}> 
-              <FontAwesomeIcon icon={faXmark} />
-            </div>
-          </div>
-        </nav>
-
-        <nav className="container_menu">
-          <div className="group_menu">
-            <a href="#"><FontAwesomeIcon icon={faBell} /></a>
-            <a href="#"><FontAwesomeIcon icon={faGear} /></a>
-          </div>
-        </nav>
-
-        <nav className="container_profile">
-          <div className="group_profile">
-            <div className="profile_photo">
-              <img src={Sue} alt="Sue" />
-            </div>
-            <div className="profile_name">
-              <h5>Sue</h5>
-            </div>
-            <div className="profile_settings">
-              <FontAwesomeIcon icon={faEllipsisVertical} />
-            </div>
-          </div>
-        </nav>
+      <nav className="container_header">
+  <div className="group_search">
+    <div className="icon_search">
+      <img src={Search} className='icon' alt="search icon" />
+    </div>
+    <input
+      type="text"
+      placeholder="Buscar"
+      className="input_search"
+      ref={inputSearchRef}
+    />
+    <div className="btn_close" ref={btnCloseRef}>
+      <img src={Close} className='icon' alt="close icon" />
+    </div>
+  </div>
+  <div className="group_menu">
+    <img src={Notification} className="icon" alt="notification icon" />
+    <img src={Gear} className="icon" alt="gear icon" />
+  </div>
+  <div className="group_profile">
+    <div className="profile_photo">
+      <img src={Sue} alt="Sue" />
+    </div>
+    <div className="profile_name">
+      <h5>Sue</h5>
+    </div>
+    <div className="profile_settings">
+      <img src={More} alt="settings icon" />
+    </div>
+  </div>
+</nav>
     </>
   );
 };
