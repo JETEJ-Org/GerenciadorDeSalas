@@ -1,0 +1,50 @@
+.splashscreen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.splashscreen svg {
+    width: 90%;
+    height: 90%;
+}
+
+.engrenagemDireita {
+    animation: girarEsquerda 6s linear infinite;
+    transform-origin: 124.5px 60px;
+    transform: rotate(32.4deg);
+}
+
+.engrenagemEsquerda {
+    animation: girarDireita 6s linear infinite;
+    transform-origin: 79.5px 60px;
+}
+
+@keyframes girarEsquerda {
+    0% {
+        transform: rotate(32.4deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes girarDireita {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .splashscreen svg {
+        width: 70%;
+        height: 70%;
+    }
+}

@@ -17,7 +17,7 @@ import DefinirNovaSenha from "./components/loginpage/definirNovaSenha";
 
 // Components
 import Sidebar from "./components/sidebar/sidebar";
-import Header from "./components/header/header";
+import Loading from "./components/loading/loading";
 
 // Config Routes
 const router = createBrowserRouter([
@@ -64,6 +64,10 @@ const router = createBrowserRouter([
   {
     path: "/start",
     element: <Start />,
+  },
+  {
+    path: "/splashscreen",
+    element: <Loading />,
   }
 ]);
 

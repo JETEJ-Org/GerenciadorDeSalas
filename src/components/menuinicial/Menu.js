@@ -9,6 +9,7 @@ const Menu = () => {
       <Link className="linkNav" to="/building">Building</Link>
       <Link className="linkNav" to="/start">Start</Link>
       <Link className="linkNav" to="/cadastro">Cadastro</Link>
+      <Link className="linkNav" to="/splashscreen">SplashScreen</Link>
     </div>
   );
 };

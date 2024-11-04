@@ -12,5 +12,5 @@
 }
 
 .linkNav {
-    font-size: 50px;
+    font-size: clamp(1.5rem, 3vw, 10rem);
 }

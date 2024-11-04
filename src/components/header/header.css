@@ -1,23 +1,16 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins';
-}
-
 .container_header {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
   position: fixed;
-  top: 0; 
-  left: 0; 
-  width: 100%; 
-  margin-left: 330px; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-left: 330px;
   padding: 10px 0;
   gap: 20px;
-  z-index: 1000; 
+  z-index: 1000;
 }
 
 .group_search {

@@ -1,0 +1,241 @@
+.register-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--semantics-three);
+}
+
+.register-main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 3%;
+    width: 90%;
+    height: 90%;
+}
+
+.register-card-esquerdo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 7%;
+    min-height: 25px;
+    border-radius: 20px;
+    background-color: var(--semantics-four);
+    overflow: hidden;
+}
+
+.register-card-esquerdo h1 {
+    display: none;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.done {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    height: 100%;
+}
+
+.done svg {
+    width: 70%;
+}
+
+.done h2 {
+    display: none;
+}
+
+.register-card-direito {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 90%;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.register-cardireito-title {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 0;
+    width: 100%;
+    height: 15%;
+    text-wrap: nowrap;
+}
+
+.register-cardireito-title p {
+    font-weight: var(--font-extrabold);
+    color: var(--semantics-four);
+    font-size: clamp(10px, 2vh, 22px);
+}
+
+.register-cardireito-title h1 {
+    font-weight: var(--font-extrabold);
+    color: var(--letras);
+    font-size: clamp(16px, 3vh, 28px);
+}
+
+.register-cardireito-form {
+    width: 100%;
+    height: 70%;
+    overflow-y: auto;
+}
+
+.register-cardireito-form form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    min-height: 250px;
+    gap: 20px;
+}
+
+.register-cardireito-form-input {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 15%;
+    font-size: 14px;
+    font-weight: var(--font-extrabold);
+}
+
+.register-cardireito-form-input input {
+    width: 100%;
+    height: 100%;
+    min-height: 40px;
+    max-height: 60px;
+    padding-left: 10px;
+    border-radius: 14px;
+    border: 1px solid #D8E0F0;
+    background-color: white;
+    font-size: 14px;
+    font-weight: var(--font-regular);
+    color: var(--secondary-three);
+}
+
+.register-cardireito-footer {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    bottom: 0;
+    width: 100%;
+    height: 15%;
+    padding-right: 30px;
+    border-top: 1px solid #D8E0F0;
+}
+
+.register-cardireito-footer button {
+    width: 35%;
+    height: 50%;
+    min-height: 20px;
+    max-height: 50px;
+    padding: 5px;
+    font-size: clamp(5px, 4vw, 18px);
+    background: var(--semantics-four);
+    text-wrap: nowrap;
+    overflow: hidden
+}
+
+.linha-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5%;
+}
+
+.linha {
+    width: 20px;
+    height: 1px;
+    background-color: #D8E0F0;
+    margin: 0 5px;
+}
+
+@media screen and (min-width: 1024px) {
+    .register-main {
+        flex-direction: row;
+    }
+
+    .register-card-direito {
+        width: 100%;
+        height: 100%;
+    }
+
+    .register-cardireito-form {
+        width: 70%;
+        height: 70%;
+    }
+
+    .register-card-esquerdo {
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 30%;
+        height: 100%;
+        color: white;
+        font-weight: 400;
+        padding-top: 150px;
+    }
+
+    .register-card-esquerdo h1 {
+        display: block;
+        font-size: clamp(12px, 2vw, 40px);
+        margin-bottom: 80px;
+    }
+
+    .check {
+        justify-content: flex-start;
+        flex-direction: column;
+        height: 40%;
+    }
+
+    .done {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 80%;
+        height: 40px;
+        gap: 5px;
+    }
+
+    .done svg {
+        width: 40px;
+    }
+
+    .done h2 {
+        display: block;
+        font-size: clamp(16px, 1vw, 22px);
+        font-weight: 400;
+    }
+
+    .linha-container {
+        width: 80%;
+        height: 30px;
+        margin-left: 40px;
+        border-left: 2px solid #FFFFFF;
+    }
+
+    .linha {
+        display: none;
+    }
+}
