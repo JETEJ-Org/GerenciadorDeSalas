@@ -4,6 +4,7 @@ import "./menuinicial.css"
 const Menu = () => {
   return (
     <div className="divLinks">
+      <Link className="linkNav" to="/reserva">Reserva</Link>
       <Link className="linkNav" to="/login">Login</Link>
       <Link className="linkNav" to="/sidebar">Sidebar</Link>
       <Link className="linkNav" to="/building">Building</Link>

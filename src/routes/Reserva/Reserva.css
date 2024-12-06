@@ -1,0 +1,164 @@
+body {
+    border-radius: 10px;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100dvw;
+    height: 100dvh;
+}
+
+.bodycontainer {    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {   
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+}
+
+.topcontainer {
+    /*position: fixed;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 50px;
+    text-align: center;
+    color: #123033;
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.reserve {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+    background-color: #127F87;
+    color: white;
+    margin-left: 60%;
+    transition: background-color 0.3s ease;
+}
+
+.reserve:hover {
+    background-color: #0e5c61;
+}
+
+.input-container {
+    position: relative;
+    flex-shrink: 0;        
+    width: 100%;
+}
+
+.input-container img {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+}
+
+.search {
+    width: 100%;
+    height: 40px;
+    padding-left: 40px;
+    border: 1px solid #ccc;
+    border-radius: 39.574px;
+    background: #F2F2F2;
+    color: #545454;
+    font-family: Poppins, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.roomcontainer {
+    /*margin-top: 30%;*/
+    border-radius: 27.429px;
+    padding: 1%;
+    width: auto;
+    background: #DAEAEB;
+    box-shadow: 0px 6.857px 66.286px 0px rgba(196, 203, 214, 0.10);
+}
+
+.room {    
+    margin: 0px 15px 0px 15px;
+    gap: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moreinfo {  
+    width: 40px;
+    height: 50px;
+    border-radius: 16px;
+    background: #F4F9FD;
+}
+
+.moreinfo:hover {
+    background: #d5d8db;
+}
+
+/* Contador de Páginas de Reserva
+.pages_count {
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    gap: 1px; 
+    padding: 1px; 
+}
+
+.count {
+    display: flex; 
+    align-items: center; 
+    gap: 5px; 
+}
+
+.arrows {
+    display: flex; 
+    gap: 10px; 
+}
+
+.arrows img {
+    width: 20px; 
+    height: 20px; 
+    cursor: pointer; 
+}*/

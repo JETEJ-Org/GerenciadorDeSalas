@@ -4,11 +4,12 @@ import reportWebVitals from "./reportWebVitals";
 
 // Routes
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Start from "./routes/Start/start"
+import Start from "./routes/Start/start";
 import Home from "./routes/Home/Home";
 import Login from "./routes/Login/Login";
 import Building from "./routes/Building/Building";
-import Cadastro from "./routes/Register/Register"
+import Cadastro from "./routes/Register/Register";
+import Reserva from "./routes/Reserva/Reserva";
 // Filhos de Login
 import LoginPage from "./components/loginpage/loginPage";
 import RecuperarSenha from "./components/loginpage/recuperarSenha";
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+  },
+  {
+  path: "/reserva",
+  element: <Reserva />,
   },
   {
     path: "/login",
