@@ -20,9 +20,11 @@ const Reserva = () => {
             <h1>Reservas</h1>
             <button className="reserve">+</button>
           </div>
-          <div className="inputcontainer">
-            <img src={Search} alt="Search Icon"></img>
-            <input type="text" placeholder="Search Room" className="search"></input>          
+          <div className="input-container">
+            <div className="icon_search">
+              <img src={Search} className="icon" alt="Search Icon" />
+            </div>
+            <input type="text" placeholder="Search Room" className="search"/>         
           </div>
         </div>
         <div className="roomcontainer">

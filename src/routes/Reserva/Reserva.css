@@ -86,7 +86,7 @@ h1 {
     transform: translateY(-50%);
     width: 20px;
     height: 20px;
-    pointer-events: none;
+    pointer-events: icon;
 }
 
 .search {
@@ -105,6 +105,8 @@ h1 {
     outline: none;
     box-sizing: border-box;
 }
+
+
 
 .roomcontainer {
     /*margin-top: 30%;*/
