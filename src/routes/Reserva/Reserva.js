@@ -1,13 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./Reserva.css";
 
+//Componentes
 import Sidebar from "../../components/sidebar/sidebar";
 import Header from "../../components/header/header";
+
+import Reservar from "../../components/reserva/nova-reserva/Reservar";
 
 import More from "../../assets/header_images/Keyboard arrow down.png";
 import Search from "../../assets/header_images/search.png";
 
 const Reserva = () => {
+  const [isPopupVisible, setPopupVisible] = useState(false);
+  const togglePopup = () => {
+    setPopupVisible(!isPopupVisible);
+  }
+
+
   return (
     
     <div className="bodycontainer">      
@@ -18,7 +27,9 @@ const Reserva = () => {
         <div className="topcontainer">
           <div className="top">            
             <h1>Reservas</h1>
-            <button className="reserve">+</button>
+            <button className="reserve" onClick={togglePopup}>+
+            <Reservar isVisible={isPopupVisible} onClose={togglePopup}/>
+            </button>
           </div>
           <div className="input-container">
             <div className="icon_search">
