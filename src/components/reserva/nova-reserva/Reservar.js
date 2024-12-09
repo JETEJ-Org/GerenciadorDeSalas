@@ -10,7 +10,7 @@ const Reservar = ({ isVisible, onClose }) => {
   return (
     <div className="overlay">
       <div className="popup">
-        <h2>Detalhes da Reserva</h2>
+        <h2>Nova Reserva</h2>
         <form>
           <div className="form-group">
             <label>Sala</label>

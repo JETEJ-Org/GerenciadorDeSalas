@@ -6,8 +6,9 @@ import Sidebar from "../../components/sidebar/sidebar";
 import Header from "../../components/header/header";
 
 import Reservar from "../../components/reserva/nova-reserva/Reservar";
+import Detalhar from "../../components/reserva/detalhes-reserva/Detalhes";
 
-import More from "../../assets/header_images/Keyboard arrow down.png";
+import More from "../../assets/header_images/more.png";
 import Search from "../../assets/header_images/search.png";
 
 const Reserva = () => {
@@ -16,6 +17,7 @@ const Reserva = () => {
     setPopupVisible(!isPopupVisible);
   }
 
+    
 
   return (
     
@@ -27,7 +29,7 @@ const Reserva = () => {
         <div className="topcontainer">
           <div className="top">            
             <h1>Reservas</h1>
-            <button className="reserve" onClick={togglePopup}>+
+            <button className="newreserve_button" onClick={togglePopup}>+ Reserva
             <Reservar isVisible={isPopupVisible} onClose={togglePopup}/>
             </button>
           </div>
@@ -44,7 +46,8 @@ const Reserva = () => {
             <p id="info2">Pessoa</p>
             <p id="info3">Data</p>
             <p id="info4">Horário</p>            
-            <button className="moreinfo"><img src={More} alt="More Info"/></button>
+            <button className="moreinfo" onClick={togglePopup}><img src={More} alt="More Info"/></button>
+            <Detalhar isVisible={isPopupVisible} onClose={togglePopup}/>
           </div>
         </div>
         {/*<div className="pages_count"> 
