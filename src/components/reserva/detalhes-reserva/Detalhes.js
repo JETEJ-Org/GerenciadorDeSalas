@@ -1,10 +1,7 @@
 import React from "react";
 import "./Detalhes.css";
 
-
-//Código provisório, apenas para ver se o pop-up aparece.
-
-const Detalhar = ({ isVisible, onClose }) => {
+const Reservar = ({ isVisible, onClose }) => {
   if (!isVisible) return null;
 
   return (
@@ -14,29 +11,29 @@ const Detalhar = ({ isVisible, onClose }) => {
         <form>
           <div className="form-group">
             <label>Sala</label>
-            <p className="info" id="sala">alguma sala </p>
+            <input type="text" placeholder="Sala de Aula" id="room" disabled/>
           </div>
           <div className="form-group">
             <label>Data</label>
-            <p className="info" id="data"> / / </p>
+            <input type="date" id="date" disabled/>
           </div>
           <div className="form-group time-group">
             <div>
               <label>Início</label>
-              <p className="info" id="hora_inicio"> : </p>
+              <input type="time" id="i_time"disabled/>
             </div>
             <div>
               <label>Término</label>
-              <p className="info" id="hora_fim"> : </p>
+              <input type="time" id="f_time" disabled/>
             </div>
           </div>
           <div className="form-group">
             <label>Motivo</label>
-            <p className="info" id="motivo_reserva">algum motivo </p>
+            <textarea placeholder="Descreva o motivo da reserva" id="reserve_reason" disabled></textarea>
           </div>
           <div className="actions">
             <button type="button" onClick={onClose}>
-              Anterior
+              Anterior  
             </button>
             <button type="submit">Finalizar</button>
           </div>
@@ -46,4 +43,4 @@ const Detalhar = ({ isVisible, onClose }) => {
   );
 };
 
-export default Detalhar;
+export default Reservar;

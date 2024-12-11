@@ -36,7 +36,7 @@ const Reservar = ({ isVisible, onClose }) => {
           </div>
           <div className="actions">
             <button type="button" onClick={onClose}>
-              Anterior
+              Anterior  
             </button>
             <button type="submit">Finalizar</button>
           </div>

@@ -26,58 +26,45 @@ main {
     justify-content: top;
 }
 
-.topcontainer {
-    /*position: fixed;*/
+/*.topcontainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 5%;
-}
+}*/
 
 .top {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 10px;
+    justify-content: space-between; 
+    padding-top: 100px;
 }
 
 h1 {
-    margin-left: -100%;    
-    margin-right: 100%;    
-    /*text-align: center;*/
-    color: #123033;
-    font-weight: 700;
-    line-height: normal;
+    margin-right: 500px;
     color: #0A1629;
-    font-family: "Nunito Sans";
+    font-family: "Nunito Sans", sans-serif;
     font-size: 36px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
 }
 
 .newreserve_button {
     width: 100px;
     height: 48px;
-    flex-shrink: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     border: none;
     background-color: #127F87;
-    font-family: "Nunito Sans";
+    font-family: "Nunito Sans", sans-serif;
     font-size: 16px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
-    margin-left: 100%;
-    transition: background-color 0.3s ease;
     border-radius: 14px;
     box-shadow: 0px 6px 12px 0px rgba(63, 140, 255, 0.26);
     color: #FFF;
-
+    transition: background-color 0.3s ease;
 }
 
 .newreserve_button:hover {
@@ -85,23 +72,25 @@ h1 {
 }
 
 .input-container {
-    position: relative;
-    flex-shrink: 0;        
+    position: center;
+    padding-left: 450px;
+    padding-bottom: 1%;
     width: 100%;
 }
 
-.input-container img {
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
-    pointer-events: icon;
-}
+.search_icon{    
+    width: 25px;
+    .icon{
+        position: absolute;
+        left: 460px;
+        transform: translateY(3px);
+        pointer-events: icon;
+        background-color:unset;
+    }
+} 
 
 .search {
-    width: 100%;
+    width: 25%;
     height: 40px;
     padding-left: 40px;
     border: 1px solid #ccc;
@@ -116,8 +105,6 @@ h1 {
     outline: none;
     box-sizing: border-box;
 }
-
-
 
 .roomcontainer {
     /*margin-top: 30%;*/
