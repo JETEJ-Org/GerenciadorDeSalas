@@ -26,14 +26,6 @@ main {
     justify-content: top;
 }
 
-/*.topcontainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 5%;
-}*/
-
 .top {
     display: flex;
     align-items: center;
@@ -47,6 +39,24 @@ h1 {
     font-family: "Nunito Sans", sans-serif;
     font-size: 36px;
     font-weight: 700;
+}
+
+.filter_button{
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    margin-right: 10px;
+    border: none;
+    background: #FFF;
+    box-shadow: 0px 6px 58px 0px rgba(196, 203, 214, 0.10);
+    img{        
+        transform: translateY(10px);
+        transform: scale(0.7);
+    }
+}
+
+.filter_button:hover{
+    background: #d7d7d7;
 }
 
 .newreserve_button {
@@ -76,18 +86,17 @@ h1 {
     padding-left: 450px;
     padding-bottom: 1%;
     width: 100%;
+    .search_icon{    
+        width: 25px;
+        .icon{
+            position: absolute;
+            left: 460px;
+            transform: translateY(3px);
+            pointer-events: icon;
+            background-color:unset;
+        }
+    } 
 }
-
-.search_icon{    
-    width: 25px;
-    .icon{
-        position: absolute;
-        left: 460px;
-        transform: translateY(3px);
-        pointer-events: icon;
-        background-color:unset;
-    }
-} 
 
 .search {
     width: 25%;
@@ -107,7 +116,7 @@ h1 {
 }
 
 .roomcontainer {
-    /*margin-top: 30%;*/
+    margin-top: 1%;
     border-radius: 27.429px;
     padding: 1%;
     width: auto;
